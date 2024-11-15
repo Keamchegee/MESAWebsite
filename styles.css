@@ -1,0 +1,142 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+	width:100%;
+}
+.section-tittle{
+	text-align: center;
+	padding-bottom: 70px;
+}
+.section-tittle h1{
+	margin: auto;
+	font-size: 50px;
+	color: #009688;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+}
+.section-tittle h1::after{
+     content: '';
+     width: 100px;
+     height: 70px;
+     background: linear-gradient(red,green,blue);
+     position: absolute;
+     transform: rotate(10deg);
+     border-top-left-radius: 70px;
+     border-bottom-right-radius: 70px;
+     top: -20px;
+     left: 35%;
+     z-index: -1;
+}
+
+.section-tittle p{
+	font-size: 20px;
+	margin-top: 5px;
+}
+.copyright{
+	text-align:center;
+	color:darkblue;
+}
+.copyright p a{
+	text-decoration: none;
+	color: darkblue;
+}
+
+#hero{
+	height:100vh;
+	color:lawngreen;
+
+}
+/*-------navigation bar-----*/
+#navbarNav ul{
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+}
+.container-fluid{
+	display: flex;
+}
+#nav-bar{
+	position: absolute;
+	top: 0;
+	z-index: 3;
+	display: flex;
+}
+.navbar{
+	padding: 0 !important;
+}
+.navbar-brand{
+	width:50px;
+	height:50px;
+
+}
+.navbar-brand img{
+	height:auto;
+	width:100%;
+	border-radius: 50%;
+}
+.navbar-nav li{
+	padding:0 10px;
+
+}
+.navbar-nav li a{
+	color:white !important;
+	font-weight: 800;
+	float:right;
+	text-align: left;
+	font-size: 20px;
+	text-decoration: none;
+}
+.fa-bars{
+	color:#fff;
+	font-size: 20px !important;
+}
+.nav-toggler{
+	outline: none !important;
+}
+/*---------Banner-------*/
+#banner{
+	background-image:linear-gradient(rgba(0,0,25,0.6),rgba(0,0,25,0.6)),url('home/home.jpg');
+	padding-top: 30px;
+	height:80vh;
+	top:;
+	
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: hidden;
+	position:absolute;
+}
+.ass-tittle{
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 100px;
+}
+.join-btn{
+	width:80px;
+	height:40px;
+	border-radius:7px;
+	border:1px solid white;
+	padding: 5px;
+	margin:50px;
+}
+#banner a{
+    text-decoration: none;
+	color:yellow;
+}
+#footer{
+
+	background-color: skyblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#footer h1{
+	color:#fff;
+}
